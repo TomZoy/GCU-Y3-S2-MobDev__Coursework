@@ -14,6 +14,8 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.AbstractList;
+import java.util.ArrayList;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -36,10 +38,57 @@ public class CarParkListingTestActivity extends Activity
         
         // Get the TextView object on which to display the results
         response = (TextView)findViewById(R.id.urlResponse);
+        
+
         try
         {
         	// Get the data from the RSS stream as a string
         	result =  sourceListingString(sourceListingURL);
+        	
+        	/// added stuff
+
+        	
+        	private void parseXML(XmlPullParser parser) throws XmlPullParserException,IOException
+        	{
+        		ArrayList<carPark> carparkList = null;
+                int eventType = parser.getEventType();
+                carPark currentcarPark = null;
+
+                while (eventType != XmlPullParser.END_DOCUMENT){
+                    String name = null;
+                    switch (eventType){
+                        case XmlPullParser.START_DOCUMENT:
+                        	carparkList = new ArrayList();
+                            break;
+                        case XmlPullParser.START_TAG:
+                            name = parser.getName();
+                            if (name == "situation"){
+                                currentcarPark = new carPark();
+                            } else if (currentcarPark != null){
+                                if (name == "carParkIdentity"){
+                                    currentcarPark.name = parser.nextText();
+                                } 
+                                else if (name == "carParkStatus"){
+                                    currentcarPark.status = parser.nextText();
+                                } else if (name == "occupiedSpaces"){
+                                    currentcarPark.takenSpaces= Integer.parseInt(parser.nextText());
+                                } else if (name == "totalCapacity"){
+                                	currentcarPark.totalSpaces = Integer.parseInt(parser.nextText());
+                                }  
+                            }
+                            break;
+                        case XmlPullParser.END_TAG:
+                            name = parser.getName();
+                            if (name.equalsIgnoreCase("product") && currentcarPark != null){
+                            	carparkList.add(currentcarPark);
+                            } 
+                    }
+                    eventType = parser.next();
+                }
+
+        	
+        	///  added stuff end
+        	
         	
         	// Do some processing of the data to get the individual parts of the XML stream
         	// At some point put this processing into a separate thread of execution
@@ -47,7 +96,7 @@ public class CarParkListingTestActivity extends Activity
         	// Display the string in the TextView object just to demonstrate this capability
         	// This will need to be removed at some point
         	response.setText(result);
-        }
+        }}
         catch(IOException ae)
         {
         	// Handle error
