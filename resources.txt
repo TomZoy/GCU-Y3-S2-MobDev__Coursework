@@ -1,1 +1,5 @@
-http://www.vogella.com/tutorials/AndroidXML/article.html
+http://www.sitepoint.com/learning-to-parse-xml-data-in-your-android-app/
+
+http://www.androidhive.info/2011/11/android-xml-parsing-tutorial/
+
+
