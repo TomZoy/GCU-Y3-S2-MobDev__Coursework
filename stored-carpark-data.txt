@@ -1,0 +1,7 @@
+id (id  eg; CPG25C)
+name ( carParkIdentity eg; High Street:CPG13C)
+total spaces ( totalCapacity eg;1600)
+taken spaces ( occupiedSpaces eg; 55)
+status ( carParkStatus eg; enoughSpacesAvailable OR carParkClosed )
+
+updated datetime ? not stored, need to stamp download time!
