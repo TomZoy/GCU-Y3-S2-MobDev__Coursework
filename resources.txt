@@ -8,3 +8,17 @@ http://www.sitepoint.com/learning-to-parse-xml-data-in-your-android-app/
 http://www.androidhive.info/2011/11/android-xml-parsing-tutorial/
 
 http://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html
+
+
+chart;
+http://androidroadies.blogspot.in/2013/05/generate-3d-pie-chart-using-google.html
+http://psychopyko.com/tutorial/how-to-use-google-charts/
+https://developers.google.com/chart/image/docs/making_charts
+http://markinns.com/articles/full/using_googles_chart_api
+http://chart.apis.google.com/chart?cht=p&chs=300x150&chl=A|B|C&chd=t:20,20,60&chco=80C65A,224499,FF0000
+
+orientation;
+http://developer.android.com/guide/practices/screens_support.html
+http://stackoverflow.com/questions/5407752/android-layout-folders-layout-layout-port-layout-land
+
+http://stackoverflow.com/questions/5443304/how-to-change-an-android-apps-name
