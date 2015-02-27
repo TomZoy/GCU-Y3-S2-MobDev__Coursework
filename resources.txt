@@ -1,3 +1,8 @@
+http://stackoverflow.com/questions/11701399/round-up-to-2-decimal-places-in-java
+http://docs.oracle.com/javase/6/docs/api/java/lang/Math.html
+http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html#substring(int, int)
+https://developer.android.com/reference/java/util/ArrayList.html
+
 http://www.sitepoint.com/learning-to-parse-xml-data-in-your-android-app/
 
 http://www.androidhive.info/2011/11/android-xml-parsing-tutorial/
