@@ -22,3 +22,7 @@ http://developer.android.com/guide/practices/screens_support.html
 http://stackoverflow.com/questions/5407752/android-layout-folders-layout-layout-port-layout-land
 
 http://stackoverflow.com/questions/5443304/how-to-change-an-android-apps-name
+
+expandable listview;
+http://www.vogella.com/tutorials/AndroidListView/article.html
+http://theopentutorials.com/tutorials/android/listview/android-expandable-list-view-example/
