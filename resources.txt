@@ -17,12 +17,22 @@ https://developers.google.com/chart/image/docs/making_charts
 http://markinns.com/articles/full/using_googles_chart_api
 http://chart.apis.google.com/chart?cht=p&chs=300x150&chl=A|B|C&chd=t:20,20,60&chco=80C65A,224499,FF0000
 
+http://chart.apis.google.com/chart?cht=p&chs=250x150&chl=taken|free&chd=t:28,72&chco=1c7c78,f9d63e
+
+
+
 orientation;
 http://developer.android.com/guide/practices/screens_support.html
 http://stackoverflow.com/questions/5407752/android-layout-folders-layout-layout-port-layout-land
 
 http://stackoverflow.com/questions/5443304/how-to-change-an-android-apps-name
 
+//avoid realoading:
+http://stackoverflow.com/questions/5913130/dont-reload-application-when-orientation-changes
+
 expandable listview;
 http://www.vogella.com/tutorials/AndroidListView/article.html
 http://theopentutorials.com/tutorials/android/listview/android-expandable-list-view-example/
+
+icons
+http://developer.android.com/design/style/iconography.html
