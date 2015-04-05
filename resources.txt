@@ -36,3 +36,7 @@ http://theopentutorials.com/tutorials/android/listview/android-expandable-list-v
 
 icons
 http://developer.android.com/design/style/iconography.html
+
+async task
+http://www.vogella.com/tutorials/AndroidBackgroundProcessing/article.html#overview_basics
+https://developer.android.com/reference/android/os/AsyncTask.html
